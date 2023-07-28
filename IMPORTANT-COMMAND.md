@@ -26,3 +26,5 @@
 # undo last commit and goes to the staging area
     git reset --soft HEAD~1
 
+# remove file from staging area 
+    git restore --staged <fileName to unstage>
