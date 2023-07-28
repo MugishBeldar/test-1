@@ -19,3 +19,10 @@
 # change github account in vs-code using terminal
     git config --global user.email <your email>
     git config --global user.name <your username>
+
+# delete last commit and rest of files
+    git reset --hard HEAD~1
+
+# undo last commit and goes to the staging area
+    git reset --soft HEAD~1
+
