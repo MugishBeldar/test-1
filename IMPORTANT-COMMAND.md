@@ -1,5 +1,10 @@
 ##### sequilize commands
 
+# dump all db file in to your local sql database
+    find . -type f -name "*.sql" -exec mysql -u root -proot dotio -e "source {}" \;
+    
+    replace dotio with your database name 
+    
 # for install sequelize cli 
     npm install --save-dev sequelize-cli
 
