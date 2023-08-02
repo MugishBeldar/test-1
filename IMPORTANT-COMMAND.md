@@ -33,3 +33,7 @@
 
 # remove file from staging area 
     git restore --staged <fileName to unstage>
+
+# ignore eslint warnings (dry run) 
+    git commit -n -m "message"
+
