@@ -52,5 +52,5 @@
 ```
 (6) ignore eslint warnings (dry run) 
 ```sh
-    git commit -n -m "message"
+    git commit -n -m <message>
 ```
