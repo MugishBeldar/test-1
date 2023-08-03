@@ -1,41 +1,56 @@
 # sequilize commands
 
-(1) dump all db file in to your local sql database
+(1) dump all db file in to your local sql database (replace dotio with your database name )
 ```sh
     find . -type f -name "*.sql" -exec mysql -u root -proot dotio -e "source {}" \;
 ```
-    
-    replace dotio with your database name 
-    
-# for install sequelize cli 
+
+(2) for install sequelize cli
+```sh
     npm install --save-dev sequelize-cli
+```
 
-# for sequelize cli help 
+(3) for sequelize cli help 
+```sh
     npx sequelize-cli --help
+```
 
-# for install sequelize package
+ (4) for install sequelize package
+ ```sh
     npm install sequelize 
+ ```
 
-# for create migration file in migration forlder
+(5) for create migration file in migration forlder
+```sh
     npx sequelize-cli migration:create --name <file name without extension>
+```
 
-# get current git hub account details:
+# git commands
+
+(1) get current git hub account details:
+```sh
     git config --global user.email
     git config --global user.name
-
-# change github account in vs-code using terminal
+```
+(2) change github account in vs-code using terminal
+```sh
     git config --global user.email <your email>
     git config --global user.name <your username>
-
-# delete last commit and rest of files
+```
+(3) delete last commit and rest of files
+```sh
     git reset --hard HEAD~1
+```
 
-# undo last commit and goes to the staging area
+(4) undo last commit and goes to the staging area
+```sh
     git reset --soft HEAD~1
-
-# remove file from staging area 
+```
+(5) remove file from staging area 
+```sh
     git restore --staged <fileName to unstage>
-
-# ignore eslint warnings (dry run) 
+```
+(6) ignore eslint warnings (dry run) 
+```sh
     git commit -n -m "message"
-
+```
