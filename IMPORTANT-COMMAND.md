@@ -32,11 +32,13 @@
     git config --global user.email
     git config --global user.name
 ```
+
 (2) change github account in vs-code using terminal
 ```sh
     git config --global user.email <your email>
     git config --global user.name <your username>
 ```
+
 (3) delete last commit and rest of files
 ```sh
     git reset --hard HEAD~1
@@ -46,10 +48,12 @@
 ```sh
     git reset --soft HEAD~1
 ```
+
 (5) remove file from staging area 
 ```sh
     git restore --staged <fileName to unstage>
 ```
+
 (6) ignore eslint warnings (dry run) 
 ```sh
     git commit -n -m <message>
