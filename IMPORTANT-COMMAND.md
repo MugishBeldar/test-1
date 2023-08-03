@@ -1,7 +1,9 @@
-##### sequilize commands
+# sequilize commands
 
-# dump all db file in to your local sql database
+(1) dump all db file in to your local sql database
+```sh
     find . -type f -name "*.sql" -exec mysql -u root -proot dotio -e "source {}" \;
+```
     
     replace dotio with your database name 
     
