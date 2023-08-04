@@ -49,6 +49,11 @@
     git reset --soft HEAD~1
 ```
 
+(5) undo perticular commit 
+```sh
+    git reset <commit uuid>
+```
+
 (5) remove file from staging area 
 ```sh
     git restore --staged <fileName to unstage>
@@ -58,3 +63,15 @@
 ```sh
     git commit -n -m <message>
 ```
+
+(7) commit msg with name 
+```sh
+    git lg
+```
+
+(8) display commit with changes
+```sh
+    git log --stat
+```
+
+(9) 
